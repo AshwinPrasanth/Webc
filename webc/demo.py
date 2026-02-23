@@ -16,8 +16,9 @@ print("Headings found:")
 for h in headings:
     print("-", h.get_text(strip=True))
 
+
 # Step 4: Access the task layer
 print("\n=== TASK ===")
-summary = site.task.summarize(max_chars=500)
-print("Summary (500 chars):")
+summary = site.task.summarize(max_chars=1000, refine=False)
+print("Summary (5000 chars):")
 print(summary)
