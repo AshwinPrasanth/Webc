@@ -1,7 +1,7 @@
 from webc.websoc import social
 
 # Target: The high-production music video
-target_url = "https://www.youtube.com/watch?v=TROFVicWrTE" 
+'''target_url = "https://youtu.be/Gep0IzKTcFI?si=c2Sa7EYZAM0UNYVG" 
 
 print("📺 WEBC: YOUTUBE DEEP-DATA EXTRACTION")
 print("="*65)
@@ -35,4 +35,18 @@ else:
     print("⚠️  Warning: Metadata blocked or generic. Check if Pattern B in extraction is active.")
 
 print("-" * 65)
-print("\n" + "="*65)
+print("\n" + "="*65)'''
+
+from webc.websoc import social
+
+target_url = "https://www.reddit.com/r/python/comments/1j4zqxk/what_are_you_working_on_this_month_march_2025/"
+
+print("🔍 DEBUG: REDDIT RAW RESPONSE")
+print("="*65)
+
+view = social[target_url]
+
+# Check what path was taken
+print(f"JSON source found: {'_json_source' in view._standalone_meta}")
+print(f"Standalone meta keys: {list(view._standalone_meta.keys())}")
+print(f"Raw meta dump: {view._standalone_meta}")
