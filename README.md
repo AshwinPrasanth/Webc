@@ -7,6 +7,7 @@
 **Version:** 0.2.1
 **Author:** Ashwin Prasanth and Sachin Prasanth
 
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/webc?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLUE&right_color=ORANGE&left_text=downloads)](https://pepy.tech/projects/webc)
 ---
 ## 🚀 Update v0.2.1
 * **Improved accessibility**
